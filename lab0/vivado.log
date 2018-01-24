@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jan 23 17:38:55 2018
+# Process ID: 3297
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aap
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.xpr
+INFO: [Project 1-313] Project file moved from '/home/cc/eecs151/sp18/class/eecs151-aap/.Xil/Vivado-1471-c125m-21.EECS.Berkeley.EDU/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jan 23 17:40:44 2018] Launched synth_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/synth_1/runme.log
+[Tue Jan 23 17:40:45 2018] Launched impl_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:55:00
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A6E1F4A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A6E1F4A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6E1F4A
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/impl_1/ml505top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/impl_1/ml505top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_project
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab0/lab0/lab0.xpr
+INFO: [Project 1-313] Project file moved from '/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/testing/lab0/lab0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'.
+archive_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab0/lab0.xpr.zip -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-3297-c125m-21.EECS.Berkeley.EDU' for archiving project
+INFO: [Project 1-313] Project file moved from '/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/testing/lab0/lab0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...

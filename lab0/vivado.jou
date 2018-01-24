@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jan 23 17:38:55 2018
+# Process ID: 3297
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aap
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.xpr
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A6E1F4A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A6E1F4A]
+open_hw_target
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/impl_1/ml505top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/fpga_labs_sp18/lab0/lab0.runs/impl_1/ml505top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_project
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab0/lab0/lab0.xpr
+archive_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab0/lab0.xpr.zip -force -exclude_run_results -include_config_settings

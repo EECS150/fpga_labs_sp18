@@ -1,0 +1,28 @@
+set_property PACKAGE_PIN L19 [get_ports {BUTTONS[3]}]
+set_property PACKAGE_PIN L20 [get_ports {BUTTONS[2]}]
+set_property PACKAGE_PIN D20 [get_ports {BUTTONS[1]}]
+set_property PACKAGE_PIN D19 [get_ports {BUTTONS[0]}]
+set_property PACKAGE_PIN R14 [get_ports {LEDS[0]}]
+set_property PACKAGE_PIN P14 [get_ports {LEDS[1]}]
+set_property PACKAGE_PIN N16 [get_ports {LEDS[2]}]
+set_property PACKAGE_PIN M14 [get_ports {LEDS[3]}]
+set_property PACKAGE_PIN L15 [get_ports {LEDS[4]}]
+set_property PACKAGE_PIN M15 [get_ports {LEDS[5]}]
+set_property PACKAGE_PIN M20 [get_ports {SWITCHES[0]}]
+set_property PACKAGE_PIN M19 [get_ports {SWITCHES[1]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {BUTTONS[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {BUTTONS[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {BUTTONS[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {BUTTONS[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SWITCHES[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SWITCHES[1]}]
+
+## A neat way to assign both the pin signal name and the I/O standard at the same time:
+# set_property -dict { PACKAGE_PIN L19   IOSTANDARD LVCMOS33 } [get_ports { BUTTONS[3] }];
