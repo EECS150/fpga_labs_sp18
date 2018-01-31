@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan 31 09:30:27 2018
+# Process ID: 2182
+# Current directory: /home/arya
+# Command line: vivado
+# Log file: /home/arya/vivado.log
+# Journal file: /home/arya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 6142.469 ; gain = 39.742 ; free physical = 27521 ; free virtual = 31102
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Jan 31 10:42:46 2018] Launched synth_1...
+Run output will be captured here: /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/synth_1/runme.log
+[Wed Jan 31 10:42:46 2018] Launched impl_1...
+Run output will be captured here: /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:02:11
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A40B24A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A40B24A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A40B24A
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/arya/.Xil/Vivado-2182-growly/dcp0/z1top.xdc]
+Finished Parsing XDC File [/home/arya/.Xil/Vivado-2182-growly/dcp0/z1top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7058.496 ; gain = 0.000 ; free physical = 24843 ; free virtual = 29161
+Restored from archive | CPU: 0.020000 secs | Memory: 0.165215 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7058.496 ; gain = 0.000 ; free physical = 24843 ; free virtual = 29161
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 7226.824 ; gain = 390.523 ; free physical = 24743 ; free virtual = 29062
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'z1top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj z1top_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/adder_tester.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tester
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/behavioral_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module behavioral_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/tone_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tone_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/z1top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module z1top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 7a19fa2409754234b1ac87fb41cdb846 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot z1top_behav xil_defaultlib.z1top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 15 for port sum [/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/z1top.v:18]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" Line 1. Module structural_adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" Line 1. Module structural_adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/behavioral_adder.v" Line 1. Module behavioral_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/adder_tester.v" Line 1. Module adder_tester doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder_default
+Compiling module xil_defaultlib.tone_generator
+Compiling module xil_defaultlib.behavioral_adder
+Compiling module xil_defaultlib.adder_tester
+Compiling module xil_defaultlib.z1top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot z1top_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/z1top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/z1top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jan 31 10:49:04 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 31 10:49:04 2018...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7532.664 ; gain = 0.000 ; free physical = 24359 ; free virtual = 28751
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "z1top_behav -key {Behavioral:sim_1:Functional:z1top} -tclbatch {z1top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source z1top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'z1top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 7618.203 ; gain = 85.539 ; free physical = 24311 ; free virtual = 28710
+run all
+run all
+run 1 s
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Jan 31 10:51:28 2018] Launched synth_1...
+Run output will be captured here: /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/synth_1/runme.log
+[Wed Jan 31 10:51:28 2018] Launched impl_1...
+Run output will be captured here: /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/impl_1/runme.log
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+archive_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2.xpr.zip -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-2182-growly' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...

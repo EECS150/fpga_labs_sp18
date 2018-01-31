@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/adder_tester.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tester
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/behavioral_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module behavioral_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/tone_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tone_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/z1top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module z1top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

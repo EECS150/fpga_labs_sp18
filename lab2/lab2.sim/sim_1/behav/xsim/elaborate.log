@@ -1,0 +1,51 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 7a19fa2409754234b1ac87fb41cdb846 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot z1top_behav xil_defaultlib.z1top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 15 for port sum [/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/z1top.v:18]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" Line 1. Module structural_adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/structural_adder.v" Line 1. Module structural_adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/behavioral_adder.v" Line 1. Module behavioral_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/arya/src/eecs151-sp18/fpga_labs/staging/lab2/lab2/lab2.srcs/sources_1/new/adder_tester.v" Line 1. Module adder_tester doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder_default
+Compiling module xil_defaultlib.tone_generator
+Compiling module xil_defaultlib.behavioral_adder
+Compiling module xil_defaultlib.adder_tester
+Compiling module xil_defaultlib.z1top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot z1top_behav
