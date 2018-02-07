@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Feb  6 23:35:36 2018
+# Process ID: 29744
+# Current directory: /home/arya
+# Command line: vivado
+# Log file: /home/arya/vivado.log
+# Journal file: /home/arya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab3/lab3/lab3.xpr
+update_compile_order -fileset sources_1
+reset_simulation
+archive_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab3/lab3.xpr.zip -force -exclude_run_results -include_config_settings
