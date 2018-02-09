@@ -13,12 +13,7 @@ module z1top (
     output AUDIO_PWM
 );
 
-    tone_generator audio_controller (
-        .clk(CLK_125MHZ_FPGA),
-        .output_enable(SWITCHES[1]),
-        .tone_switch_period({18'd0, SWITCHES[0], BUTTONS[3:0]} << 9),
-        .square_wave_out(AUDIO_PWM)
-    );
+    // TODO(you): Your code here.
 
     assign LEDS[5:0] = 6'b0;
 endmodule
