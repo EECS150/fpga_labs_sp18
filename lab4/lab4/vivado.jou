@@ -1,0 +1,475 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 11 23:12:45 2018
+# Process ID: 3306
+# Current directory: /home/arya
+# Command line: vivado
+# Log file: /home/arya/vivado.log
+# Journal file: /home/arya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/ml505top.v] -no_script -reset -force -quiet
+remove_files  /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/ml505top.v
+file delete -force /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/ml505top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/shift_register_testbench.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/shift_register.v}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top shift_register_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source shift_register_testbench.tcl
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sync_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source sync_testbench.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+close_project
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source debouncer_testbench.tcl
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top edge_detector_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+source edge_detector_testbench.tcl
+relaunch_sim
+add_wave {{/edge_detector_testbench/DUT/stored_signals}} {{/edge_detector_testbench/DUT/detected_pulses}} 
+relaunch_sim
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source debouncer_testbench.tcl
+run 10 us
+relaunch_sim
+close_sim
+launch_simulation
+source debouncer_testbench.tcl
+relaunch_sim
+run 10 us
+close_sim
+launch_simulation
+source debouncer_testbench.tcl
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+close_sim
+launch_simulation
+source debouncer_testbench.tcl
+run 10 us
+close_sim
+export_ip_user_files -of_objects  [get_files /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_fpga_test.v] -no_script -reset -force -quiet
+remove_files  /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_fpga_test.v
+file delete -force /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_fpga_test.v
+export_ip_user_files -of_objects  [get_files /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_testbench.v] -no_script -reset -force -quiet
+remove_files  /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_testbench.v
+file delete -force /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder_testbench.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_fpga_test [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab3/lab3/lab3.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc
+import_files -fileset constrs_1 /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab3/lab3/lab3.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A40B24A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A40B24A]
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/debouncer_fpga_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top shift_register_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+launch_simulation
+launch_simulation
+source shift_register_testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+close_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source music_streamer_testbench.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tone_generator_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tone_generator_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tone_generator_testbench.tcl
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 50 ms
+run 1000 ms
+relaunch_sim
+run 1000 ms
+run 1000 ms
+relaunch_sim
+run 1000 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+run all
+add_wave {{/tone_generator_testbench/tone_to_play}} 
+close_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source music_streamer_testbench.tcl
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source music_streamer_testbench.tcl
+relaunch_sim
+run 1000 ms
+relaunch_sim
+run 1000 ms
+relaunch_sim
+run 50 ms
+close_sim
+launch_simulation
+source music_streamer_testbench.tcl
+run 10 ms
+restart
+run all
+relaunch_sim
+run 10 ms
+relaunch_sim
+restart
+close_sim
+launch_simulation
+source music_streamer_testbench.tcl
+run 10 ms
+relaunch_sim
+relaunch_sim
+run 10 ms
+run 30 ms
+run 30 ms
+relaunch_sim
+run 4000 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.runs/impl_1/z1top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+close_design
+add_files -norecurse {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/keypad_decoder.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/keypad_decoder_testbench.v}
+update_compile_order -fileset sources_1
+save_project_as lab4_solutions /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4_solutions -force
+reset_simulation()
+reset_simulation
+reset_simulation -force
+close_sim
+close_project
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder.v] -no_script -reset -force -quiet
+remove_files  /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/sources_1/new/rotary_decoder.v
+close_project
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+reset_simulation
+save_project_as lab4_solutions /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4_solutions -force
+close_project
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+archive_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4.xpr.zip -force -exclude_run_results -include_config_settings
