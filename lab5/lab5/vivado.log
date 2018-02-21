@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Feb 20 06:24:15 2018
+# Process ID: 6268
+# Current directory: /home/arya
+# Command line: vivado
+# Log file: /home/arya/vivado.log
+# Journal file: /home/arya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab5 /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5 -part xc7z020clg400-3
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+add_files -fileset constrs_1 -norecurse /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc
+import_files -fileset constrs_1 /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc
+add_files -norecurse /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/util.vh
+add_files -norecurse {/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/button_parser.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/synchronizer.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/echo_testbench.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/edge_detector.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/uart_receiver.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/uart_transmitter.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/debouncer.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/ml505top.v /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/uart.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/z1top.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/ml505top.v] -no_script -reset -force -quiet
+remove_files  /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/ml505top.v
+file delete -force /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/ml505top.v
+update_compile_order -fileset sources_1
+add_files -norecurse /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/z1top.v
+WARNING: [filemgmt 56-12] File '/home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/sources_1/new/z1top.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+set_property top z1top [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_project_as lab5_solutions /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5_solutions -force
+close_project
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+archive_project /home/arya/teaching/eecs151-sp18/fpga_labs/production/lab5.xpr.zip -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-6268-nebuchadnezzar' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
