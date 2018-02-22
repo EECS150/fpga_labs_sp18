@@ -24,7 +24,8 @@ module echo_testbench();
     // I/O of z1top
     wire FPGA_SERIAL_RX, FPGA_SERIAL_TX;
     reg reset;
-
+    
+    reg [5:0] leds;
     // Our FPGA design
     z1top #(
         .CLOCK_FREQ(`CLOCK_FREQ),
@@ -33,8 +34,10 @@ module echo_testbench();
         .B_PULSE_COUNT_MAX(1)
     ) top (
         .CLK_125MHZ_FPGA(clk),
-        .GPIO_BUTTONS(5'd0),
-        .FPGA_CPU_RESET_B(~reset), // Invert the reset we use in the tesbench, b/c CPU_RESET is active-low
+        .BUTTONS(3'd0),
+        .SWITCHES(2'd0),
+        .RESET(reset),
+        .LEDS(leds),
         .FPGA_SERIAL_RX(FPGA_SERIAL_RX),
         .FPGA_SERIAL_TX(FPGA_SERIAL_TX)
     );
