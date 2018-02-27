@@ -25,7 +25,7 @@ module echo_testbench();
     wire FPGA_SERIAL_RX, FPGA_SERIAL_TX;
     reg reset;
     
-    reg [5:0] leds;
+    wire [5:0] leds;
     // Our FPGA design
     z1top #(
         .CLOCK_FREQ(`CLOCK_FREQ),
