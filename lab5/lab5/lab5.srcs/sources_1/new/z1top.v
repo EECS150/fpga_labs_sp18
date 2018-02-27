@@ -27,7 +27,7 @@ module z1top # (
     wire reset;
 
     wire any_reset;
-    assign reset = |({reset, buttons});
+    assign any_reset = |({reset, buttons});
     button_parser #(
         .width(4),
         .sample_count_max(B_SAMPLE_COUNT_MAX),
