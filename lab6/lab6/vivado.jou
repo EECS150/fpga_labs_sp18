@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Feb 28 12:49:03 2018
+# Process ID: 4652
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aap
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aap/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+save_project_as lab6_solutions /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab6/lab6_solutions -force
+close_project
+open_project /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.srcs/sources_1/new/z1top.v] -no_script -reset -force -quiet
+remove_files  /home/cc/eecs151/sp18/class/eecs151-aap/eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.srcs/sources_1/new/z1top.v
+update_compile_order -fileset sources_1
+archive_project /tmp/lab6.xpr.zip -force -exclude_run_results -include_config_settings
