@@ -38,7 +38,8 @@ set_property -dict { PACKAGE_PIN L19   IOSTANDARD LVCMOS33 } [get_ports { RESET 
 
 ##Pmod Header JA
 
-# TEMPORARY. REMOVE.
+# Connections to the Pmod I2S, if you were to plug it into the top row of PMOD
+# A. You can remove this and customise the mapping yourself.
 set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { MCLK }]; #IO_L17P_T2_34 Sch=ja_p[1]
 set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { LRCLK }]; #IO_L17N_T2_34 Sch=ja_n[1]
 set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { SCLK }]; #IO_L7P_T1_34 Sch=ja_p[2]
@@ -55,7 +56,8 @@ set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { AUDIO_
 
 ##Pmod Header JB
 
-# DEBUG. REMOVE.
+# If plugged in a Pmod 8LD module into PMOD B, you would have an additional 8
+# LEDs for debugging (otherwise, you can remove it):
 set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { PMOD_LEDS[0] }]; #IO_L8P_T1_34 Sch=jb_p[1]
 set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { PMOD_LEDS[1] }]; #IO_L8N_T1_34 Sch=jb_n[1]
 set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { PMOD_LEDS[2] }]; #IO_L1P_T0_34 Sch=jb_p[2]
