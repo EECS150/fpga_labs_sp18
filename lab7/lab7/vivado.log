@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  7 03:53:16 2018
+# Process ID: 12317
+# Current directory: /home/arya
+# Command line: vivado
+# Log file: /home/arya/vivado.log
+# Journal file: /home/arya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab7/lab7_solutions/lab7_solutions.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  7 03:53:54 2018] Launched synth_1...
+Run output will be captured here: /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab7/lab7_solutions/lab7_solutions.runs/synth_1/runme.log
+[Wed Mar  7 03:53:54 2018] Launched impl_1...
+Run output will be captured here: /home/arya/teaching/eecs151-sp18/fpga_labs/staging/lab7/lab7_solutions/lab7_solutions.runs/impl_1/runme.log
